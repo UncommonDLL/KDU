@@ -8,14 +8,14 @@ unsigned long long strtou64_a(char *s)
 	if (s == 0)
 		return 0;
 
-	while (*s != 0) {
-		c = *s;
-		if (_isdigit_w(c))
-			a = (a*10)+((unsigned long long)c-'0');
-		else
-			break;
-		s++;
-	}
+        while (*s != 0) {
+                c = *s;
+                if (_isdigit_a(c))
+                        a = (a*10)+((unsigned long long)c-'0');
+                else
+                        break;
+                s++;
+        }
 	return a;
 }
 
